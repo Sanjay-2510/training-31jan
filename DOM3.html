@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="a">
+        <h1>Ram</h1>
+        <h1 id="z">Ravi</h1>
+    </div>
+    <div id="b">
+        <h2>Reo</h2>
+        <h2 id="y">Rahul</h2>
+    </div>
+    
+    <script>
+        let n=document.createElement("h2");
+        n.textContent="Raju"   //can also use inner text
+        //n.innerText="Raju"         
+
+        //inserting before Ravi
+        let p=document.getElementById('a');
+        let l=document.getElementById('z');
+        p.insertBefore(n,l);
+        console.log(p);
+
+        let m=document.createElement("h2");
+        m.textContent="Sanjay"
+
+        //inserting before Rahul
+        let q=document.getElementById('b');
+        let r=document.getElementById('y');
+        q.insertBefore(m,r);
+        console.log(q);
+
+    </script>
+</body>
+</html>
